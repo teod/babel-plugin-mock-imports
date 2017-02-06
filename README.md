@@ -1,6 +1,6 @@
 # Babel Plugin Mock Imports
 
-Mock import statements with ease, for testing purposes inside a NodeJS environment.
+Mock import statements with ease, for testing purposes.
 
 ## Quickstart
 
@@ -12,16 +12,16 @@ Example usage in .babelrc:
 ```js
 {
 	"plugins": [
-	  ["./src/import-mock-plugin.js", [
-		{
-		  "pattern": ".(svg)$",
-		  "location": "path/to/mocked/react/component"
-		},
-		{
-    	  "pattern": "^redux-form/es$",
-	      "location": "redux-form"
-		}
-	  ]]
+		["mock-imports", [
+			{
+				"pattern": ".(svg)$",
+				"location": "path/to/mocked/react/component"
+			},
+			{
+				"pattern": "^redux-form/es$",
+				"location": "redux-form"
+			}
+		]]
 	]
 }
 ```
