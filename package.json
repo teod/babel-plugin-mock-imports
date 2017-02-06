@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-mock-imports",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Babel Plugin to mock import statements",
   "main": "lib/index.js",
   "repository": "teod/babel-plugin-mock-imports",
