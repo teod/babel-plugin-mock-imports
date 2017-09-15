@@ -4,6 +4,10 @@ module.exports = function (args) {
       ImportDeclaration(path, state) {
         const t = args.types
         const givenPath = path.node.source.value
+        
+        if (!Array.isArray(state.opts)) {
+          throw new Error('Options is required and must be an Array of Objects');
+        }
 
         state.opts.forEach((opt) => {
           const pattern = opt.pattern
