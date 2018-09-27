@@ -4,12 +4,14 @@ module.exports = function (args) {
       ImportDeclaration(path, state) {
         const t = args.types
         const givenPath = path.node.source.value
-        
-        if (!Array.isArray(state.opts)) {
-          throw new Error('Options is required and must be an Array of Objects');
+
+        const redirects = state.opts.redirects
+
+        if (!Array.isArray(redirects)) {
+          throw new Error('Redirects option is required and must be an Array of Objects Array<{ pattern: string, location: string }>');
         }
 
-        state.opts.forEach((opt) => {
+        redirects.forEach((opt) => {
           const pattern = opt.pattern
           const location = opt.location
           const regEx = new RegExp(pattern, 'i')
