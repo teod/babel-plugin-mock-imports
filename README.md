@@ -9,11 +9,11 @@ npm install babel-plugin-mock-imports --save-dev
 ```
 
 Example usage in .babelrc:
-```js
+```json
 {
 	"plugins": [
 		["mock-imports", {
-			"redirects": {
+			"redirects": [
 				{
 					"pattern": ".(svg)$",
 					"location": "path/to/mocked/react/component"
@@ -22,7 +22,7 @@ Example usage in .babelrc:
 					"pattern": "^redux-form/es$",
 					"location": "redux-form"
 				}
-			}
+			]
 		}]
 	]
 }

@@ -8,12 +8,13 @@
   "scripts": {
     "compile": "rimraf lib/*; babel src/ -d lib/ -s",
     "prepublish": "npm run compile",
-    "test": "ava test/index.spec.js"
+    "test": "ava test/index.spec.js && readlint"
   },
   "devDependencies": {
     "@babel/core": "7.1.0",
     "@babel/preset-env": "7.1.0",
     "ava": "0.25.0",
+    "readlint": "0.6.1",
     "rimraf": "2.6.2"
   }
 }
