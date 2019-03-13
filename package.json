@@ -2,6 +2,7 @@
   "name": "babel-plugin-mock-imports",
   "version": "1.0.0",
   "description": "Babel Plugin to mock import statements",
+  "license" : "MIT",
   "main": "lib/index.js",
   "repository": "teod/babel-plugin-mock-imports",
   "author": "Teo Druta <teodruta@gmail.com.com>",
