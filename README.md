@@ -9,7 +9,7 @@ npm install babel-plugin-mock-imports --save-dev
 ```
 
 Example usage in .babelrc:
-```json
+```bash
 {
 	"plugins": [
 		["mock-imports", {
