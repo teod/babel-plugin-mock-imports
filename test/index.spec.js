@@ -1,6 +1,6 @@
-import test from 'ava'
-import plugin from '../src/index'
-import * as babel from '@babel/core'
+const test = require('ava')
+const plugin = require('../src/index')
+const babel = require('@babel/core')
 
 test('plugin', (t) => {
   let transformed = babel.transform("import Icon from 'assets/icon.svg'", {

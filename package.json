@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-mock-imports",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Babel Plugin to mock import statements",
   "license": "MIT",
   "main": "lib/index.js",
@@ -8,14 +8,14 @@
   "author": "Teo Druta <teodruta@gmail.com.com>",
   "scripts": {
     "compile": "rimraf lib/*; babel src/ -d lib/ -s",
-    "prepublish": "npm run compile",
+    "prepublishOnly": "npm run compile",
     "test": "ava test/index.spec.js && readlint"
   },
   "devDependencies": {
-    "@babel/core": "7.1.0",
-    "@babel/preset-env": "7.1.0",
-    "ava": "0.25.0",
-    "readlint": "0.6.1",
-    "rimraf": "2.6.2"
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "ava": "^3.8.2",
+    "readlint": "^0.7.2",
+    "rimraf": "^3.0.2"
   }
 }
